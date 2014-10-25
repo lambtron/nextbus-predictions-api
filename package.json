@@ -1,0 +1,28 @@
+{
+  "name": "nextbus-api",
+  "version": "0.0.1",
+  "repository": "lambtron/nextbus-api",
+  "description": "lightweight API to retrieve route predictions.",
+  "keywords": [
+    "koa",
+    "nextbus",
+    "api"
+  ],
+  "dependencies": {
+    "koa-response-time": "~1.0.2",
+    "koa-ratelimit": "~1.0.3",
+    "koa-compress": "1.0.7",
+    "koa-logger": "~1.2.1",
+    "koa-cors": "0.0.13",
+    "koa": "~0.6.1",
+    "commander": "~2.2.0",
+    "debug": "*",
+    "co-body": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "supertest": "~0.8.2"
+  },
+  "license": "MIT"
+}
