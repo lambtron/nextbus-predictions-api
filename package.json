@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "repository": "lambtron/nextbus-api",
   "description": "Light-weight API to fetch muni prediction times.",
+  "engines": {
+    "node": "0.11.x"
+  },
   "keywords": [
     "koa",
     "nextbus",
