@@ -1,0 +1,26 @@
+{
+  "name": "nextbus-api",
+  "version": "0.0.1",
+  "repository": "lambtron/nextbus-api",
+  "description": "Light-weight API to fetch muni prediction times.",
+  "keywords": [
+    "koa",
+    "nextbus",
+    "api"
+  ],
+  "dependencies": {
+    "koa-logger": "~1.2.1",
+    "koa-cors": "0.1.13",
+    "koa": "~0.6.1",
+    "debug": "*",
+    "koa-router": "~3.1.4",
+    "koa-resource-router": "^0.3.3",
+    "co-body": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "supertest": "~0.8.2"
+  },
+  "license": "MIT"
+}
