@@ -12,19 +12,23 @@
     "api"
   ],
   "dependencies": {
-    "koa-logger": "~1.2.1",
-    "koa-cors": "0.0.13",
+    "batch": "^0.5.1",
+    "co-body": "0.0.1",
     "koa": "~0.6.1",
-    "debug": "*",
-    "koa-router": "~3.1.4",
-    "koa-route": "~2.2.0",
+    "koa-cors": "0.0.13",
+    "koa-logger": "~1.2.1",
     "koa-resource-router": "^0.3.3",
-    "co-body": "0.0.1"
+    "koa-route": "~2.2.0",
+    "koa-router": "~3.1.4",
+    "superagent": "0.20.0",
+    "underscore": "^1.7.0",
+    "xml2js": "^0.4.4"
   },
   "devDependencies": {
     "mocha": "*",
     "should": "*",
-    "supertest": "~0.8.2"
+    "supertest": "~0.8.2",
+    "debug": "*"
   },
   "license": "MIT"
 }

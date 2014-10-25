@@ -12,14 +12,19 @@ Endpoints:
 /api/predictions/
 
 Request:
-```
+```javascript
 {
-  stopId: [6526]
+  stops: [
+    { route: '2', stopTag: '6608' },
+    { route: '3', stopTag: '6592' },
+    { route: '38', stopTag: '4761' },
+    { route: '38L', stopTag: '4294' }
+  ]
 }
 // or
 {
-  stopId: [
-    6524, 5837, 5839, 3472
+  stops: [
+    { route: '2', stopTag: '6608' }
   ]
 }
 ```
