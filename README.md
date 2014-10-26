@@ -1,36 +1,47 @@
-Nextbus API
+Nextbus Prediction API
 ===========
 
 Light-weight API to retrieve muni prediction times.
 
-All pay loads are
+All pay loads are `Content-type: application/json`.
 
-Content-type: application/json
-
-Endpoints:
+## Endpoint:
 
 /api/predictions/
 
-Request:
+## Request:
 ```bash
-curl -X POST -H "Content-type: application/json" -d '{"stops": [{"route": "2", "stopTag": "6608"}]}' http://nextbus-predictions.herokuapp.com/api/predictions
+curl -X POST
+     -H "Content-type: application/json"
+     -d '{"stops": [{"route": "2", "stopTag": "6608"}]}'
+     http://nextbus-predictions.herokuapp.com/api/predictions
 ```
 
+Or,
+```javascript
+{
+  "stops": [
+    {
+      "route": "2",
+      "stopTag": "6608"
+    }
+    // etc.
+  ]
+}
+```
 
-Response:
+## Response:
 ```javascript
 [
-  [
-    {
-      "timeUntilArrival": 15,
-      "stopTitle": "Sutter St & Scott St",
-      "routeTitle": "2-Clement"
-    },
-    {
-      "timeUntilArrival": 33,
-      "stopTitle": "Sutter St & Scott St",
-      "routeTitle": "2-Clement"
-    }
-  ]
+  {
+    "timeUntilArrival": 15,   // In minutes.
+    "stopTitle": "Sutter St & Scott St",
+    "routeTitle": "2-Clement"
+  },
+  {
+    "timeUntilArrival": 33,
+    "stopTitle": "Sutter St & Scott St",
+    "routeTitle": "2-Clement"
+  }
 ]
 ```
