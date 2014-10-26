@@ -1,4 +1,4 @@
-Nextbus Prediction API
+Nextbus Predictions API
 ===========
 
 Light-weight API to retrieve muni prediction times.

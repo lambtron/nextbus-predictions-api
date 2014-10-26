@@ -13,8 +13,8 @@ app.use(cors());
 
 
 app.use(_.get('/', function *() {
-  this.body = "Welcome to the Nextbus Prediction API.";
-  this.body += "See the documentation here: http://www.github.com/lambtron/nextbus-api";
+  this.body = "Welcome to the Nextbus Predictions API.";
+  this.body += "See the documentation here: http://www.github.com/lambtron/nextbus-predictions-api";
 }));
 
 
