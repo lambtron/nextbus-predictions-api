@@ -7,7 +7,7 @@ All pay loads are `Content-type: application/json`.
 
 ## Endpoint:
 
-/api/predictions/
+http://nextbus-predictions.herokuapp.com/api/predictions/
 
 ## Request:
 ```bash
