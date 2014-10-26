@@ -12,40 +12,25 @@ Endpoints:
 /api/predictions/
 
 Request:
-```javascript
-{
-  stops: [
-    { route: '2', stopTag: '6608' },
-    { route: '3', stopTag: '6592' },
-    { route: '38', stopTag: '4761' },
-    { route: '38L', stopTag: '4294' }
-  ]
-}
-// or
-{
-  stops: [
-    { route: '2', stopTag: '6608' }
-  ]
-}
+```bash
+curl -X POST -H "Content-type: application/json" -d '{"stops": [{"route": "2", "stopTag": "6608"}]}' http://nextbus-predictions.herokuapp.com/api/predictions
 ```
 
 
 Response:
 ```javascript
-{
-  stops: [
-    id: 6462,
-    route: 2,
-    title: 2L,
-    predictions: [
-      8, 18, 28, 38
-    ],
-    id: 4762,
-    route: 3,
-    title: 3L,
-    predictions: [
-      2, 12, 22, 32
-    ]
+[
+  [
+    {
+      "timeUntilArrival": 15,
+      "stopTitle": "Sutter St & Scott St",
+      "routeTitle": "2-Clement"
+    },
+    {
+      "timeUntilArrival": 33,
+      "stopTitle": "Sutter St & Scott St",
+      "routeTitle": "2-Clement"
+    }
   ]
-}
+]
 ```
