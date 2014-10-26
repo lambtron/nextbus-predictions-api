@@ -2,10 +2,13 @@
 var koa = require('koa');
 var _ = require('koa-route');
 var cors = require('koa-cors');
+var bodyParser = require('koa-bodyparser');
 var app = koa();
 var PORT = process.env.PORT || 3000;
+var nextbus = require('./lib/nextbus');
 
 
+app.use(bodyParser());
 app.use(cors());
 
 
@@ -18,9 +21,7 @@ app.use(_.get('/', function *() {
  * API endpoints.
  *
  */
-app.use(_.get('/api/prediction', function *() {
-  console.log(this);
-}));
+app.use(_.post('/api/predictions', nextbus.getAllPredictions));
 
 
 /**
