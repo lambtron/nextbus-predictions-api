@@ -1,1 +1,0 @@
-curl -X POST -H "Content-type: application/json" -d '{"stops": [{"route": "2", "stopTag": "6608"}]}' localhost:3000/api/predictions
